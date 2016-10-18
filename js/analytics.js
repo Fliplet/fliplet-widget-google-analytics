@@ -1,6 +1,12 @@
 (function () {
-  var tag = $('script[data-' + Fliplet.Env.get('platform') + '-tracker]');
-  if (tag) {
-    Fliplet.Analytics.start(tag.data('id'));
+  var tag = $('script[data-analytics-tracker-id]');
+
+  if (!tag) {
+    return;
   }
+
+  var trackerData = Fliplet.Widget.getData(tag.data('analytics-tracker-id'));
+  var trackerId = trackerData[Fliplet.Env.get('platform') === 'web' ? 'webTracker' : 'nativeTracker'];
+
+  Fliplet.Analytics.start(trackerId, trackerData.name);
 })();
