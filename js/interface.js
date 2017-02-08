@@ -3,8 +3,8 @@ $('form').submit(function (event) {
 
   Fliplet.Widget.save({
     trackerName: 'custom',
-    webTracker: $('[name="webTracker"]').val(),
-    nativeTracker: $('[name="nativeTracker"]').val()
+    webTracker: 'UA-' + $('[name="webTracker"]').val().replace(/\s|^UA *-/gi, ''),
+    nativeTracker: 'UA-' + $('[name="nativeTracker"]').val().replace(/\s|^UA *-/gi, '')
   }).then(function () {
     Fliplet.Widget.complete();
   });
