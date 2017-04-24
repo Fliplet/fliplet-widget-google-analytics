@@ -7,6 +7,7 @@
   "provider_only": false,
   "references": [],
   "html_tag": "div",
+  "support_article": "http://help.fliplet.com/fliplet-studio-2/how-to-configure-and-test-google-analytics"
   "interface": {
     "dependencies": [
       "fliplet-core",
