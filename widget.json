@@ -2,6 +2,7 @@
   "name": "Google Analytics",
   "package": "com.fliplet.google-analytics",
   "version": "1.0.0",
+  "description": "<p>Use this add-on to add analytics and track compounded user behaviour on your apps - this one’s a must if you’re serious about continuous app improvement.</p><p>Need some guidance configuring Google Analytics? <a href=\"http://help.fliplet.com/fliplet-studio-2/how-to-configure-and-test-google-analytics\">See the help article</a>.<br>Also, you might want to see our <a href=\"https://fliplet.com/blog/optimise-your-mobile-app-using-analytics/\">top tips for app analytics here</a>.</p>",
   "icon": "img/icon.png",
   "tags": ["type:appComponent", "category:analytics"],
   "provider_only": false,
