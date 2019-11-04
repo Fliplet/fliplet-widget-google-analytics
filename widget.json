@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "<p>Use this add-on to add analytics and track compounded user behaviour on your apps - this one’s a must if you’re serious about continuous app improvement.</p><p>Need some guidance configuring Google Analytics? <a href=\"https://help.fliplet.com/article/17-how-to-configure-and-test-google-analytics\">See the help article</a></p><p>Also, you might want to see our <a href=\"https://fliplet.com/blog/optimise-your-mobile-app-using-analytics/\">top tips for app analytics here</a></p>",
   "icon": "img/icon.png",
-  "tags": ["type:appComponent", "category:analytics"],
+  "tags": ["type:appComponent", "category:analytics", "visibility:hidden"],
   "provider_only": false,
   "references": [],
   "html_tag": "div",
