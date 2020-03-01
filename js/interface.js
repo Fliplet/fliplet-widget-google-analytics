@@ -6,7 +6,9 @@ $('form').submit(function (event) {
     webTracker: 'UA-' + $('[name="webTracker"]').val().replace(/\s|^UA *-/gi, ''),
     nativeTracker: 'UA-' + $('[name="nativeTracker"]').val().replace(/\s|^UA *-/gi, '')
   }).then(function () {
-    Fliplet.Widget.complete();
+    return Fliplet.Modal.alert({ message: 'Google Analytics configuration has been saved successfully.'}).then(function () {  
+      Fliplet.Widget.complete();
+    });
   });
 });
 
